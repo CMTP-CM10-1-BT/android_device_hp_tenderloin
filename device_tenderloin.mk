@@ -36,6 +36,12 @@ PRODUCT_COPY_FILES += \
     device/hp/tenderloin/prebuilt/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
     device/hp/tenderloin/HPTouchpad.idc:system/usr/idc/HPTouchpad.idc
 
+# Bluetooth
+#
+PRODUCT_COPY_FILES += \
+	  $(LOCAL_PATH)/bluetooth/bt_vendor.conf:/system/etc/bluetooth/bt_vendor.conf \
+	  $(LOCAL_PATH)/bluetooth/bluecore6.psr:/system/etc/bluetooth/bluecore6.psr
+
 # Dualboot Magic
 PRODUCT_COPY_FILES += \
     device/hp/tenderloin/moboot_control:system/bin/moboot_control
