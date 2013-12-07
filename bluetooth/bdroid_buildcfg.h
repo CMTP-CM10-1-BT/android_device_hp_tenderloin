@@ -19,4 +19,8 @@
 
 #define BTM_DEF_LOCAL_NAME   "HP TouchPad"
 
+/* Apparently, the HP Touchpad bluetooth chipset does not like sending command events */
+/* and data at the same time. This prevents that and makes bluetooth tethering work. */
+#define BTM_BYPASS_EXTRA_ACL_SETUP TRUE
+
 #endif
